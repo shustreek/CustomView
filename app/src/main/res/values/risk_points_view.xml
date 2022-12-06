@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RiskPointsView">
+        <attr name="pointsCount" format="integer" />
+        <attr name="pointsFillColor" format="color" />
+        <attr name="pointsStrokeColor" format="color" />
+        <attr name="pointsRadius" format="dimension" />
+        <attr name="pointsDistance" format="dimension" />
+        <attr name="pointsShape" format="enum">
+            <enum name="circle" value="0" />
+            <enum name="rectangle" value="1" />
+        </attr>
+    </declare-styleable>
+    <attr name="riskPointsViewStyle" format="reference" />
+
+    <style name="RiskPointsViewStyle">
+        <item name="pointsFillColor">@color/teal_700</item>
+        <item name="pointsStrokeColor">@color/teal_200</item>
+        <item name="pointsShape">circle</item>
+        <item name="pointsCount">5</item>
+        <item name="pointsRadius">15dp</item>
+    </style>
+</resources>
